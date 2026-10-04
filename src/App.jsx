@@ -11,7 +11,7 @@ function App() {
   }
 
   async function generateResponse() {
-    const res = await axios.post('http://127.0.0.1:8000/generate', {
+    const res = await axios.post('https://demo-gemini.onrender.com/generate', {
       prompt: prompt
     })
     setResponse(res.data.response)
